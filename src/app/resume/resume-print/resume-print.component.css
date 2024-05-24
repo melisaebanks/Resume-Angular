@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+h1, h2, h3 {
+  color: #333;
+}
+.header, .section {
+  margin-bottom: 20px;
+}
+.header {
+  text-align: center;
+}
+.header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.header h1 {
+  margin: 10px 0 5px 0;
+}
+.header h2 {
+  margin: 0;
+  color: #666;
+}
+.section h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.section ul li {
+  margin-bottom: 10px;
+}
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-info div {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 10px;
+}

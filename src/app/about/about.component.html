@@ -1,0 +1,29 @@
+<section id="about">
+  <div class="container">
+<app-about-content [about] = "profile.aboutInfo"></app-about-content>
+<app-basic-info>
+  <table class="basicInfo">
+      <tr>
+        <td>Age</td>
+        <td>{{profile.basicInfo.age}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{profile.basicInfo.email}}</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>{{profile.basicInfo.phone}}</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>{{profile.basicInfo.address}}</td>
+      </tr>
+      <tr>
+        <td>Language</td>
+        <td>{{profile.basicInfo.language}}</td>
+      </tr>
+  </table>
+</app-basic-info>
+</div>
+</section>

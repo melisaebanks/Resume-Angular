@@ -1,0 +1,13 @@
+<section id="portfolio">
+  <div class="container">
+<app-portfolio-images (portfolioEvent)="onSelected($event)"></app-portfolio-images>
+
+<div *ngIf="selectedView === 'front'">
+<app-front-end-images></app-front-end-images></div>
+<div *ngIf="selectedView === 'back'">
+<app-back-end-images></app-back-end-images></div>
+<div *ngIf="selectedView === 'database'">
+<app-database-images></app-database-images></div>
+</div>
+</section>
+

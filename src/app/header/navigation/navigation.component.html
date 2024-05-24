@@ -1,0 +1,10 @@
+<nav>
+  <div class="left-nav">
+      <a href="#resume" (click)="onClicked()">Creative CV</a>
+  </div>
+  <ul class="right-nav">
+      <li *ngFor="let link of links">
+        <a [href]="link.url">{{link.name}}</a>
+      </li>
+  </ul>
+</nav>
