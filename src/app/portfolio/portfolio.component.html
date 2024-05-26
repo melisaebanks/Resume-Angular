@@ -1,6 +1,8 @@
+<h3 style="text-align: center;">Portfolio</h3>
+
+<app-portfolio-images (portfolioEvent)="onSelected($event)"></app-portfolio-images>
 <section id="portfolio">
   <div class="container">
-<app-portfolio-images (portfolioEvent)="onSelected($event)"></app-portfolio-images>
 
 <div *ngIf="selectedView === 'front'">
 <app-front-end-images></app-front-end-images></div>

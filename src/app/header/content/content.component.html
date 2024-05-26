@@ -1,15 +1,17 @@
 
-<div class="header-content">
+<div  class="header-content">
   <img src="assets/beautiful_black_woman__.jpg" alt="beautiful black woman">
   <h1>{{person}}</h1>
   <h2>{{description}} </h2>
   <div class="contact-buttons">
-      <a href="#contact">Hire Me</a>
-      <a href="#resume" (click)="onClicked()">Download CV</a>
+      <a (click)="scrollToContact()">Hire Me</a>
+      <a (click)="onClicked()">Download CV</a>
   </div>
   <div class="social-links">
-       <a *ngFor="let link of links" [href]="link.url">
-        <i [class]="link.class"></i>
+    <div style="width: 20px; height:20px; padding:20px; margin-right:10px; background-color: rgb(116, 116, 116);  float:left; border-radius: 50%;" *ngFor="let link of links">
+       <a style="text-align: center; margin-left:0px;"   [href]="link.url">
+        <i style="text-align: center;" [class]="link.class"></i>
       </a>
+    </div>
   </div>
 </div>

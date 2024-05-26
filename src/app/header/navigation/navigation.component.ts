@@ -1,15 +1,22 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Links, ShowResume } from '../../links';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent
+export class NavigationComponent implements OnInit
 {
 
   @Output() cv = new EventEmitter<ShowResume>();
+
+  constructor(private scroller: ViewportScroller) { }
+
+  ngOnInit(): void {
+  }
 
   onClicked(){
     let publish : ShowResume =
@@ -24,25 +31,29 @@ export class NavigationComponent
   links:Links[] =
   [
     {
-        url: "#about",
+        url: "about",
         name:"About"
     },
     {
-        url: "#skills",
+        url: "skills",
         name:"Skills"
     },
     {
-        url: "#portfolio",
+        url: "portfolio",
         name:"Portfolio"
     },
     {
-        url: "#experience",
+        url: "experience",
         name:"Experience"
     },
     {
-        url: "#contact",
+        url: "contact",
         name:"Contact"
     }
   ]
+
+  OnScrollTo(anchor:string){
+    this.scroller.scrollToAnchor(anchor);
+  }
 
 }

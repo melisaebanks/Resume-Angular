@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class PortfolioImagesComponent implements OnInit {
 
   @Output() portfolioEvent = new EventEmitter<string>();
+  activeClass = "front";
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +16,7 @@ export class PortfolioImagesComponent implements OnInit {
 
   selectedPortfolio(selected: string)
   {
+    this.activeClass = selected;
     this.portfolioEvent.emit(selected);
   }
 

@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Links, ShowResume } from '../../links';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-content',
@@ -7,15 +8,23 @@ import { Links, ShowResume } from '../../links';
   styleUrls: ['./content.component.css']
 })
 
-export class ContentComponent
+export class ContentComponent implements OnInit
 {
 
+  constructor(private scroller: ViewportScroller) { }
+
+  ngOnInit(): void {
+
+  }
+
   @Output() cv = new EventEmitter<ShowResume>();
+
 
   person = "Melisa Ebanks-Johnson";
   description = "Software Architect, Web and Application Developer.";
 
   onClicked(){
+
     let publish : ShowResume =
     {
       showResume:true,
@@ -39,11 +48,6 @@ export class ContentComponent
       class: ["fa-brands", "fa-twitter"]
     },
     {
-      url: "https://www.google.com",
-      name:"google",
-      class: ["fa-brands", "fa-google"]
-    },
-    {
       url: "https://www.instagram.com",
       name:"instagram",
       class: ["fa-brands", "fa-instagram"]
@@ -53,5 +57,10 @@ export class ContentComponent
       name:"linkedin",
       class: ["fa-brands", "fa-linkedin-in"]
     }
-  ]
+  ];
+
+
+  scrollToContact() {
+    this.scroller.scrollToAnchor("contact");
+  }
 }
