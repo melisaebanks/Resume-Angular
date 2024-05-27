@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShowResume } from './links';
+import { ShowResume } from './interfaces';
 import { ViewportScroller } from '@angular/common';
 
 @Component({

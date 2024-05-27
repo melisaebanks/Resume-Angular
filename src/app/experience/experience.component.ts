@@ -1,3 +1,5 @@
+import { experience } from '../interfaces';
+import { ReferenceService } from './../reference.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  work:experience[];
+
+  constructor(private referenceService:ReferenceService) {
+    this.work = this.referenceService.getExperience();
+   }
 
   ngOnInit(): void {
+    this.work = this.referenceService.getExperience();
   }
 
 }

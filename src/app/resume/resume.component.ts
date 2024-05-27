@@ -1,5 +1,6 @@
 
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ReferenceService } from '../reference.service';
 
 @Component({
   selector: 'app-resume',
@@ -12,12 +13,17 @@ export class ResumeComponent{
   @Output() closeResumeSection = new EventEmitter<boolean>();
 
 
-  constructor() {
+  constructor(private service : ReferenceService) {
     this.showCreative = true;
   }
 
   close()
   {
     this.closeResumeSection.emit(true);
+  }
+
+  print()
+  {
+    this.service.postPrint();
   }
 }

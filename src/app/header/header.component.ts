@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { ShowResume } from '../links';
+import { ShowResume } from '../interfaces';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,7 +10,6 @@ export class HeaderComponent  {
 
   onCvClickHandler(isClicked: ShowResume)
   {
-    console.log("Parent header clicked");
      this.cvClicked.emit(isClicked);
   }
 }

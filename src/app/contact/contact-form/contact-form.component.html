@@ -1,7 +1,7 @@
-<form id="contact-form">
-  <input type="text" placeholder="Name">
-  <input type="email" placeholder="Email">
-  <input type="text" placeholder="Subject">
-  <textarea placeholder="Message"></textarea>
+<form id="contact-form" #contactform="ngForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Name"  [(ngModel)]="user.name" name="name">
+  <input type="email" placeholder="Email" [(ngModel)]="user.email" name="email">
+  <input type="text" placeholder="Subject" [(ngModel)]="user.subject" name="subject">
+  <textarea placeholder="Message" [(ngModel)]="user.message" name="message"></textarea>
   <button type="submit">Send</button>
 </form>

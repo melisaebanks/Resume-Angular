@@ -1,27 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import { ReferenceService } from '../reference.service';
+import { profile } from '../interfaces';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
 
-info = {
-  age:24,
-  email:"enquiry@humber.ca",
-  phone:"+1416-675-3111",
-  address:"205 Humber College Blvd, Etobicoke, ON M9W 5L7",
-  language: "English, Spanish"
-};
+  profile : profile;
+  info:any;
 
-abouthtml = "<p>Hello! I am Melisa Ebanks-Johnson, a Web Developer, Software Architect and Application Developer.</p>"+
-"<p>This template is built using AngularJs. I am also proficient and certified in HTML, CSS, and JavaScript. On the server side of things, I make very efficent APIs "+
- "using C#, entity framework and Microsoft SQL Server.</p>"
+  constructor(private referenceService: ReferenceService) {
+    this.profile = referenceService.getBio();
+  }
 
-profile = {
-aboutInfo: this.abouthtml,
-basicInfo:this.info
-};
+  ngOnInit() {
+    this.profile = this.referenceService.getBio();
+    this.info = {
+      age: this.profile.age,
+      email:this.profile.email,
+      phone:this.profile.phone,
+      address:this.profile.address,
+      language: this.profile.language,
+      description: this.profile.description
+    };
+  }
 
 }

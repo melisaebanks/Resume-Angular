@@ -2,31 +2,15 @@
 <h3 class="section-heading">Education</h3>
 <section id="education">
   <div class="container">
-      <div class="education-item">
+      <div class="education-item" *ngFor="let edu of education">
         <div class="title">
-          <h4>Master of Information Technology</h4>
-          <p><strong>University of Computer Science</strong> - 2016 - 2018</p>
+          <p>{{edu.timeline}}</p>
+          <strong>{{edu.certificationType}}</strong>
         </div>
         <div class="description">
-          <p>Description of education and achievements.</p>
-        </div>
-      </div>
-      <div class="education-item">
-        <div class="title">
-          <h4>Master of Information Technology</h4>
-          <p><strong>University of Computer Science</strong> - 2016 - 2018</p>
-        </div>
-        <div class="description">
-          <p>Description of education and achievements.</p>
-        </div>
-      </div>
-      <div class="education-item">
-        <div class="title">
-          <h4>Master of Information Technology</h4>
-          <p><strong>University of Computer Science</strong> - 2016 - 2018</p>
-        </div>
-        <div class="description">
-          <p>Description of education and achievements.</p>
+          <h4>{{edu.certificationName}}</h4>
+          <strong>{{edu.institution}}</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
         </div>
       </div>
   </div>

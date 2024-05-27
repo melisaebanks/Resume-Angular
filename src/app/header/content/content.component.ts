@@ -1,5 +1,6 @@
+import { ReferenceService } from './../../reference.service';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Links, ShowResume } from '../../links';
+import { Links, ShowResume } from '../../interfaces';
 import { ViewportScroller } from '@angular/common';
 
 @Component({
@@ -11,17 +12,18 @@ import { ViewportScroller } from '@angular/common';
 export class ContentComponent implements OnInit
 {
 
-  constructor(private scroller: ViewportScroller) { }
-
-  ngOnInit(): void {
-
-  }
-
   @Output() cv = new EventEmitter<ShowResume>();
 
+  person = "";
+  description = "";
 
-  person = "Melisa Ebanks-Johnson";
-  description = "Software Architect, Web and Application Developer.";
+  constructor(private scroller : ViewportScroller, private service : ReferenceService) { }
+
+  ngOnInit(): void {
+    let profile = this.service.getBio();
+      this.person = profile.name;
+      this.description = profile.title;
+  }
 
   onClicked(){
 
@@ -59,8 +61,8 @@ export class ContentComponent implements OnInit
     }
   ];
 
-
   scrollToContact() {
     this.scroller.scrollToAnchor("contact");
   }
+
 }

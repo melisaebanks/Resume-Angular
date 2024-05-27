@@ -2,33 +2,14 @@
 <h3 class="section-heading">Work Experience</h3>
 <section id="experience">
   <div class="container">
-      <div class="experience-item">
+      <div class="experience-item" *ngFor="let exp of work">
         <div class="title">
-          <p> March 2020 - Present</p>
-          <strong>CREATIVEIM</strong>
+          <br>
+          <p>{{exp.timeline}}</p>
+          <strong>{{exp.company}}</strong>
         </div>
          <div class="description">
-          <h4>Front End Developer</h4>
-           <p>Description of work and responsibilities.</p>
-         </div>
-      </div>
-      <div class="experience-item">
-        <div class="title">
-          <p>March 2020 - Present</p>
-          <strong>CREATIVEIM</strong>
-        </div>
-         <div class="description">
-          <h4>Front End Developer</h4>
-           <p>Description of work and responsibilities.</p>
-         </div>
-      </div>
-      <div class="experience-item">
-        <div class="title">
-          <p>March 2020 - Present</p>
-          <strong>CREATIVEIM</strong>
-        </div>
-         <div class="description">
-          <h4>Front End Developer</h4>
+          <h4>{{exp.title}}</h4>
            <p>Description of work and responsibilities.</p>
          </div>
       </div>

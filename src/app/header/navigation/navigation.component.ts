@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Links, ShowResume } from '../../links';
+import { Links, ShowResume } from '../../interfaces';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
@@ -24,7 +24,7 @@ export class NavigationComponent implements OnInit
       showResume:true,
       publisher:"creative"
     }
-    console.log("Child navigation clicked");
+
     this.cv.emit(publish);
   }
 

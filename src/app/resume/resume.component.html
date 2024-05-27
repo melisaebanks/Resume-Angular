@@ -1,5 +1,11 @@
-<button (click) = "close()">close</button>
+<button id="btn-close" (click) = "close()">close</button>
+<div *ngIf="!showCreative">
+  <button id="btn-print" (click) = "print()">print</button>
+</div>
+<br><br>
+<div id="resume">
 <div *ngIf="showCreative">
 <app-resume-fancy></app-resume-fancy></div>
 <div *ngIf="!showCreative">
 <app-resume-print></app-resume-print></div>
+</div>

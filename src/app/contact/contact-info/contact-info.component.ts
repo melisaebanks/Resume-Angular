@@ -1,3 +1,5 @@
+import { profile } from 'src/app/interfaces';
+import { ReferenceService } from './../../reference.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactInfoComponent implements OnInit {
 
-  constructor() { }
+  profile: profile;
+
+  constructor(private referenceService : ReferenceService) {
+     this.profile = this.referenceService.getBio();
+  }
 
   ngOnInit(): void {
+    this.profile = this.referenceService.getBio();
   }
 
 }

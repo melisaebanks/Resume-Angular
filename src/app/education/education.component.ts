@@ -1,3 +1,5 @@
+import { education } from './../interfaces';
+import { ReferenceService } from './../reference.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+  education : education[];
+
+  constructor(private referenceService:ReferenceService) {
+    this.education = this.referenceService.getEducation();
+   }
 
   ngOnInit(): void {
+    this.education = this.referenceService.getEducation();
   }
 
 }

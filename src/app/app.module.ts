@@ -24,6 +24,7 @@ import { BackEndImagesComponent } from './portfolio/back-end-images/back-end-ima
 import { DatabaseImagesComponent } from './portfolio/database-images/database-images.component';
 import { ResumeFancyComponent } from './resume/resume-fancy/resume-fancy.component';
 import { ResumePrintComponent } from './resume/resume-print/resume-print.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { ResumePrintComponent } from './resume/resume-print/resume-print.compone
     ResumePrintComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
