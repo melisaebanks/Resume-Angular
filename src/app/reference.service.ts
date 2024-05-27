@@ -46,14 +46,14 @@ export class ReferenceService {
     return[
       {company:"Humber College", timeline:"January 2024 - June 2024", title:"Fullstack Developer", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer."},
       {company:"Freelance Developer", timeline:"January 2018 - Present", title:"Fullstack Developer", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer."},
-      {company:"DCI Solutions", timeline:"March 2013-January 2018", title:"Web and desktop application Developer", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer."},
+      {company:"DCI Solutions", timeline:"March 2013 - January 2018", title:"Web and desktop application Developer", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer."},
     ];
   }
   getEducation() : education[] {
     return[
-      {institution:"Humber College", timeline:"2024-2024", certificationType:"Certificate", certificationName:"Fullstack Cloud Development", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer. "},
-      {institution:"Microsoft", timeline:"2015-2015", certificationType:"Certificate", certificationName:"Microsoft Certified", description:"Ut venenatis tellus in metus vulputate eu scelerisque. Id interdum velit laoreet id. Proin libero nunc consequat interdum varius sit amet mattis. Nibh venenatis cras sed felis eget velit aliquet sagittis id. "},
-      {institution:"University of Technology, Jamaica", timeline:"2007-2012", certificationType:"Bachelor of Science", certificationName:"BSc. Computing and Information Technology", description:"Et ligula ullamcorper malesuada proin. Turpis tincidunt id aliquet risus feugiat in ante. Ornare arcu odio ut sem nulla. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. "}
+      {institution:"Humber College", timeline:"2024 - 2024", certificationType:"Certificate", certificationName:"Fullstack Cloud Development", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Id consectetur purus ut faucibus pulvinar elementum integer. "},
+      {institution:"Microsoft", timeline:"2015 - 2015", certificationType:"Certificate", certificationName:"Microsoft Certified", description:"Ut venenatis tellus in metus vulputate eu scelerisque. Id interdum velit laoreet id. Proin libero nunc consequat interdum varius sit amet mattis. Nibh venenatis cras sed felis eget velit aliquet sagittis id. "},
+      {institution:"University of Technology, Jamaica", timeline:"2007 - 2012", certificationType:"Bachelor of Science", certificationName:"BSc. Computing and Information Technology", description:"Et ligula ullamcorper malesuada proin. Turpis tincidunt id aliquet risus feugiat in ante. Ornare arcu odio ut sem nulla. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. "}
     ];
   }
 

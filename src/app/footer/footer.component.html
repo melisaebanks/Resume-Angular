@@ -1,4 +1,12 @@
 <footer>
+  <div class="social-linksz" style="width:auto; padding-bottom:10px;">
+    <span style="text-align: center; font-size: large; padding-right:20px;" *ngFor="let link of links">
+       <a style="text-align: center; margin-left:0px;"   [href]="link.url">
+        <i style="text-align: center;" [class]="link.class"></i>
+      </a>
+    </span>
+  </div>
+  <h2>Melisa Ebanks-Johnson</h2>
   <p>&copy; 2024 Melisa Ebanks-Johnson. All rights reserved.</p>
-  <p>Design: <a href="#">template site</a></p>
+  <p>Designed with <i class="fa-regular fa-heart"></i> by Melisa Ebanks-Johnson</p>
 </footer>

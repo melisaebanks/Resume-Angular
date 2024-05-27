@@ -5,12 +5,12 @@
       <div class="education-item" *ngFor="let edu of education">
         <div class="title">
           <p>{{edu.timeline}}</p>
-          <strong>{{edu.certificationType}}</strong>
+          <div class="h5">{{edu.certificationType}}</div>
         </div>
         <div class="description">
-          <h4>{{edu.certificationName}}</h4>
-          <strong>{{edu.institution}}</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+          <div class="h5">{{edu.certificationName}}</div>
+          <div class="h4">{{edu.institution}}</div>
+          <p>{{edu.description}} </p>
         </div>
       </div>
   </div>
