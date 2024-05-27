@@ -1,24 +1,23 @@
 
 <h3 class="section-heading">References</h3>
 <section id="references">
-  <div class="container ">
-      <div class="reference-item " *ngFor="let slide of slides; let i = index" >
+  <div class="container"(mouseenter)="stopSlideShow()" (mouseleave)="startSlideShow()" >
+      <div class="reference-item carousel-slide" id="ref-{{i}}" *ngFor="let slide of slides; let i = index" [class.ref-active]="i === activeSlide">
           <div class="reference-person">
-            <img src="assets/me.jpg" alt="Reference">
+            <img [src]="slide.image" [alt]="slide.name">
             <p><strong>{{ slide.name }}</strong><br>{{ slide.position }}</p>
           </div>
-          <div class="reference-description">
+          <div class="reference-description details">
             <p>
               {{ slide.testimonial }}
-              Nunc venenatis gravida dui, sed congue ligula sollicitudin a. Ut vestibulum a tellus et semper. Praesent vitae venenatis velit, nec vestibulum nisl. Nulla ut vestibulum ipsum, quis tincidunt est. Donec ac dui quis leo bibendum elementum sed nec ex. In sapien odio, maximus vitae rhoncus et, ultrices et ante. Morbi suscipit malesuada lacus eu molestie. Nullam at ex gravida, fermentum enim non, porta est. Sed vel nulla nibh. Etiam ac iaculis nunc. Nam eu erat porttitor, aliquet ante eu, suscipit tellus. Nulla hendrerit, nulla vel hendrerit egestas, ipsum nunc malesuada nunc, eleifend imperdiet urna massa sit amet felis.
             </p>
 
           </div>
       </div>
       <div class="reference-navigation" style="display: flex;justify-content: center;align-items: center; text-align: center;">
-          <div class="reference-nav-item nav-active"><a href="javascript:(0);"></a></div>
-          <div class="reference-nav-item"><a href="javascript:(0);"></a></div>
-          <div class="reference-nav-item"><a href="javascript:(0);"></a></div>
+          <div class="reference-nav-item" [ngClass]="{'nav-active': activeSlide == 0}"><a href="javascript:(0);"></a></div>
+          <div class="reference-nav-item" [ngClass]="{'nav-active': activeSlide == 1}"><a href="javascript:(0);"></a></div>
+          <div class="reference-nav-item" [ngClass]="{'nav-active': activeSlide == 2}"><a href="javascript:(0);"></a></div>
       </div>
   </div>
 </section>

@@ -19,30 +19,48 @@ export class ReferenceComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.slides = this.referenceService.getReferences();
-   // this.startSlideShow();
+   this.startSlideShow();
+  // var link = document.getElementById('ref-0');
+  //link.style.display = 'block';
   }
 
   ngOnDestroy() {
-   // this.stopSlideShow();
+    this.stopSlideShow();
   }
 
-  // nextSlide() {
-  //   this.activeSlide = (this.activeSlide + 1) % this.slides.length;
-  // }
+  nextSlide() {
+    this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+    this.setSlideNav();
 
-  // previousSlide() {
-  //   this.activeSlide = (this.activeSlide + this.slides.length - 1) % this.slides.length;
-  // }
+  }
 
-  // startSlideShow() {
-  //   this.intervalId = setInterval(() => {
-  //     this.nextSlide();
-  //   }, 3000);
-  // }
+  setSlideNav(){
+    if((this.activeSlide+1)==1){
 
-  // stopSlideShow() {
-  //   if (this.intervalId) {
-  //     clearInterval(this.intervalId);
-  //   }
-  //}
+    }else{
+      if((this.activeSlide+1)==2){
+
+      }else{
+
+      }
+
+    }
+  }
+
+  previousSlide() {
+    this.activeSlide = (this.activeSlide + this.slides.length - 1) % this.slides.length;
+    this.setSlideNav();
+  }
+
+  startSlideShow() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  }
+
+  stopSlideShow() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
 }

@@ -126,10 +126,6 @@ section {
   border-radius: 5px;
   width: 80%;
   margin-left: 10%;margin-bottom: 100px;
-  display: table;
-    table-layout: fixed;
-  /* overflow: hidden;
-  height: 2000px; */
 }
 
 #skills{
@@ -246,10 +242,8 @@ h3 {
   height:150px;
   padding:0;
   margin-left:-50px;
-  display: table-cell;
-  width:800px;
-  overflow: hidden;
-  overflow-x: scroll;
+  width:auto;
+  display:none;
 }
 .reference-person{
   float:left;
@@ -270,6 +264,8 @@ background-color: #fff;
   background-color: #9a9a9a;
 }
 
+.reference-navigation{
+}
 .nav-active{
 
   background-color: #378c3f;

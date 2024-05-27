@@ -10,9 +10,9 @@ export class ReferenceService {
 
   getReferences() {
     return [
-      { image: 'image_url1.jpg', name: 'Person One', position: 'Position One', testimonial: 'This is a testimonial from Person One.' },
-      { image: 'image_url2.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two.' },
-      { image: 'image_url3.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three.' }
+      { image: 'assets/beautiful_black_woman.jpg', name: 'Person One', position: 'Position One', testimonial: 'This is a testimonial from Person One.' },
+      { image: 'assets/beautiful_black_woman__.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two.' },
+      { image: 'assets/software_developer_1.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three.' }
     ];
   }
 

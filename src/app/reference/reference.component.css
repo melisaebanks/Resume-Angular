@@ -1,7 +1,7 @@
-/* .carousel-container {
-  position: relative;
+.carousel-container {
+  /* position: relative;
   max-width: 600px;
-  margin: auto;
+  margin: auto; */
   overflow: hidden;
 }
 
@@ -10,15 +10,14 @@
   width: 100%;
   transition: transform 0.5s ease;
 }
-
+.ref-active{
+display: block;
+}
 .carousel-slide.active {
   display: block;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
+
 
 button {
   position: absolute;
@@ -39,14 +38,9 @@ button {
   right: 10px;
 }
 
-.details {
-  text-align: center;
-}
+
 
 h3 {
   margin: 0;
 }
 
-blockquote {
-  font-style: italic;
-} */
