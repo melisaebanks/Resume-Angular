@@ -1,0 +1,17 @@
+[33mcommit 5adc5fa4600c00115c172d8b4326b2e886d58ec9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Melisa Ebanks <melisa.ebanks@gmail.com>
+Date:   Mon May 27 00:14:57 2024 -0400
+
+    Allowed information to be pulled from services instead of hardcode
+
+[33mcommit 1d9fa671d721a16b06018159e9bc91e95cd7f537[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Melisa Ebanks <melisa.ebanks@gmail.com>
+Date:   Sun May 26 11:12:49 2024 -0400
+
+    Updated page styles
+
+[33mcommit 6b3d8df4f46208006779bf6d14b3e10c1541b97d[m
+Author: Melisa Ebanks <melisa.ebanks@gmail.com>
+Date:   Fri May 24 19:38:29 2024 -0400
+
+    Initial commit
