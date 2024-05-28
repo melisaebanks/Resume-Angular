@@ -16,6 +16,7 @@ export class ContentComponent implements OnInit
 
   person = "";
   description = "";
+  links : Links[] = [];
 
   constructor(private scroller : ViewportScroller, private service : ReferenceService) { }
 
@@ -23,6 +24,7 @@ export class ContentComponent implements OnInit
     let profile = this.service.getBio();
       this.person = profile.name;
       this.description = profile.title;
+      this.links = this.service.getSocialLinks();
   }
 
   onClicked(){
@@ -35,31 +37,6 @@ export class ContentComponent implements OnInit
     console.log("Child content clicked");
     this.cv.emit(publish);
   }
-
-
-  links : Links[] =
-  [
-    {
-      url: "https://www.facebook.com",
-      name:"facebook",
-      class: ["fa-brands", "fa-facebook-f"]
-    },
-    {
-      url: "https://www.twitter.com",
-      name:"twitter",
-      class: ["fa-brands", "fa-twitter"]
-    },
-    {
-      url: "https://www.instagram.com",
-      name:"instagram",
-      class: ["fa-brands", "fa-instagram"]
-    },
-    {
-      url: "https://www.linkedin.com",
-      name:"linkedin",
-      class: ["fa-brands", "fa-linkedin-in"]
-    }
-  ];
 
   scrollToContact() {
     this.scroller.scrollToAnchor("contact");

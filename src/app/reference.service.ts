@@ -1,4 +1,4 @@
-import { contact, education, experience, profile, skill } from './interfaces';
+import { Links, contact, education, experience, profile, skill } from './interfaces';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -11,8 +11,8 @@ export class ReferenceService {
   getReferences() {
     return [
       { image: 'assets/beautiful_black_woman.jpg', name: 'Person One', position: 'Position One', testimonial: 'This is a testimonial from Person One.' },
-      { image: 'assets/beautiful_black_woman__.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two.' },
-      { image: 'assets/software_developer_1.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three.' }
+      { image: 'assets/beautiful_black_woman_.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two.' },
+      { image: 'assets/database_image_3.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three.' }
     ];
   }
 
@@ -61,9 +61,33 @@ export class ReferenceService {
     console.log(contact);
   }
 
+  getSocialLinks():Links[] {
+    return [
+      {
+        url: "https://www.facebook.com",
+        name:"facebook",
+        class: ["fa-brands", "fa-facebook-f"]
+      },
+      {
+        url: "https://www.twitter.com",
+        name:"twitter",
+        class: ["fa-brands", "fa-twitter"]
+      },
+      {
+        url: "https://www.instagram.com",
+        name:"instagram",
+        class: ["fa-brands", "fa-instagram"]
+      },
+      {
+        url: "https://www.linkedin.com",
+        name:"linkedin",
+        class: ["fa-brands", "fa-linkedin-in"]
+      }
+    ]
+  }
+
   postPrint()
   {
     console.log("Resume is printing");
   }
-
 }
