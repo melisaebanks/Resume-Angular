@@ -20,8 +20,6 @@ export class ReferenceComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.slides = this.referenceService.getReferences();
    this.startSlideShow();
-  // var link = document.getElementById('ref-0');
-  //link.style.display = 'block';
   }
 
   ngOnDestroy() {
@@ -30,26 +28,10 @@ export class ReferenceComponent implements OnInit, OnDestroy {
 
   nextSlide() {
     this.activeSlide = (this.activeSlide + 1) % this.slides.length;
-    this.setSlideNav();
-
-  }
-
-  setSlideNav(){
-    if((this.activeSlide+1)==1){
-
-    }else{
-      if((this.activeSlide+1)==2){
-
-      }else{
-
-      }
-
-    }
   }
 
   previousSlide() {
     this.activeSlide = (this.activeSlide + this.slides.length - 1) % this.slides.length;
-    this.setSlideNav();
   }
 
   startSlideShow() {

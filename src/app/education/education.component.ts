@@ -9,10 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  education : education[];
+  education : education[] = [];
 
   constructor(private referenceService:ReferenceService) {
-    this.education = this.referenceService.getEducation();
    }
 
   ngOnInit(): void {

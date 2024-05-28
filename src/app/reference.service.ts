@@ -10,9 +10,9 @@ export class ReferenceService {
 
   getReferences() {
     return [
-      { image: 'assets/beautiful_black_woman.jpg', name: 'Person One', position: 'Position One', testimonial: 'This is a testimonial from Person One.' },
-      { image: 'assets/beautiful_black_woman_.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two.' },
-      { image: 'assets/database_image_3.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three.' }
+      { image: 'assets/beautiful_black_woman.jpg', name: 'Person One', position: 'Position One', testimonial: 'This is a testimonial from Person One.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  In massa tempor nec feugiat nisl pretium fusce.' },
+      { image: 'assets/beautiful_black_woman_.jpg', name: 'Person Two', position: 'Position Two', testimonial: 'This is a testimonial from Person Two. Viverra adipiscing at in tellus. Urna nec tincidunt praesent semper feugiat.' },
+      { image: 'assets/database_image_3.jpg', name: 'Person Three', position: 'Position Three', testimonial: 'This is a testimonial from Person Three. Scelerisque fermentum dui faucibus in ornare. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Massa placerat duis ultricies lacus sed.' }
     ];
   }
 
@@ -21,7 +21,7 @@ export class ReferenceService {
       name:"Melisa Ebanks-Johnson",
       title:"Web and desktop application developer",
       description:"<p>Hello! I am Melisa Ebanks-Johnson, a Web Developer, Software Architect and Application Developer.</p>"+
-      "<p>This template is built using AngularJs. I am also proficient and certified in HTML, CSS, and JavaScript. On the server side of things, I make very efficent APIs "+
+      "<p>This template is built using Angular. I am also proficient and certified in HTML, CSS, and JavaScript. On the server side of things, I make very efficent APIs "+
        "using C#, entity framework and Microsoft SQL Server.</p>",
       age: 24,
       email: "enquiry@humber.ca",
@@ -64,14 +64,14 @@ export class ReferenceService {
   getSocialLinks():Links[] {
     return [
       {
-        url: "https://www.facebook.com",
-        name:"facebook",
-        class: ["fa-brands", "fa-facebook-f"]
+        url: "https://www.github.com/melisaebanks",
+        name:"github",
+        class: ["fa-brands", "fa-github"]
       },
       {
         url: "https://www.twitter.com",
-        name:"twitter",
-        class: ["fa-brands", "fa-twitter"]
+        name:"X",
+        class: ["fa-brands", "fa-x-twitter"]
       },
       {
         url: "https://www.instagram.com",
@@ -79,7 +79,7 @@ export class ReferenceService {
         class: ["fa-brands", "fa-instagram"]
       },
       {
-        url: "https://www.linkedin.com",
+        url: "https://www.linkedin.com/melisa-ebanks-johnson",
         name:"linkedin",
         class: ["fa-brands", "fa-linkedin-in"]
       }
@@ -88,6 +88,6 @@ export class ReferenceService {
 
   postPrint()
   {
-    console.log("Resume is printing");
+    console.log("Resume is printing.");
   }
 }

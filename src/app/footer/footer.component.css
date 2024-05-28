@@ -1,0 +1,23 @@
+.social-linksz
+{
+  width:auto;
+  padding-bottom:10px;
+}
+
+.social-linksz span
+{
+  text-align: center;
+  font-size: large;
+  padding-right:20px;
+}
+
+.social-linksz span a
+{
+  text-align: center;
+  margin-left:0px;
+}
+
+.social-linksz span i
+{
+  text-align: center;
+}

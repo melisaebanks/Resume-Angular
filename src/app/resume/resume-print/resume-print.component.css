@@ -54,6 +54,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #eee;
 }
 .contact-info div {
   flex: 1;

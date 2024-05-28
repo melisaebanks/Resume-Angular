@@ -24,6 +24,7 @@ export class ResumeComponent{
 
   print()
   {
+    alert("Resume was sent to printer.")
     this.service.postPrint();
   }
 }

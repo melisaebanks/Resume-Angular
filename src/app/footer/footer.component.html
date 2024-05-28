@@ -1,8 +1,8 @@
 <footer>
-  <div class="social-linksz" style="width:auto; padding-bottom:10px;">
-    <span style="text-align: center; font-size: large; padding-right:20px;" *ngFor="let link of links">
-       <a style="text-align: center; margin-left:0px;"   [href]="link.url">
-        <i style="text-align: center;" [class]="link.class"></i>
+  <div class="social-linksz">
+    <span *ngFor="let link of links">
+       <a [href]="link.url">
+        <i [class]="link.class"></i>
       </a>
     </span>
   </div>

@@ -8,3 +8,29 @@
   border-radius: 5px;
   width: 150px;
 }
+
+#social-link-header div
+{
+  width: 20px;
+  height:20px;
+  padding:20px;
+  margin-right:10px;
+  background-color: rgb(116, 116, 116);
+  float:left;
+  border-radius: 50%;
+}
+
+#social-link-header div a
+{
+  text-align: center;
+  margin-left:0px;
+}
+
+#social-link-header div a i
+{
+  text-align: center;
+}
+
+
+
+

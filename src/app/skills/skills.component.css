@@ -1,0 +1,16 @@
+#percentage-div {
+  width:100%;
+  padding-bottom:20px;
+  color:#378c3f;
+}
+
+#percentage-name {
+  float: left;
+}
+
+#percentage-value {
+  float: right;
+}
+
+
+

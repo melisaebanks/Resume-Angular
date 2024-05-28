@@ -1,4 +1,3 @@
-import { ExperienceComponent } from './experience/experience.component';
 export interface Links
 {
   url:string,

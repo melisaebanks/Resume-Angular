@@ -38,7 +38,7 @@ ngOnInit(): void {
 
   }
 
-  onClose(isCliked:boolean)
+  onClose(isClicked:boolean)
   {
     this.showResume = false;
   }

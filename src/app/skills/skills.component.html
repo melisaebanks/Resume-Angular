@@ -4,7 +4,7 @@
 
       <div class="skill-bars">
           <div class="skill" *ngFor="let skill of skills">
-              <div style="width:100%; padding-bottom:20px; color:#378c3f;"><span style="float: left;">{{skill.name}} </span><span style="float: right;">{{skill.percentage}}</span></div><br>
+              <div id="percentage-div"><span id="percentage-name">{{skill.name}} </span><span id="percentage-value">{{skill.percentage}}</span></div><br>
               <div class="bar">
                   <div class="percentage" [style]="skill.style"></div>
               </div>

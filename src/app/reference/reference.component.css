@@ -1,7 +1,4 @@
 .carousel-container {
-  /* position: relative;
-  max-width: 600px;
-  margin: auto; */
   overflow: hidden;
 }
 
@@ -10,14 +7,14 @@
   width: 100%;
   transition: transform 0.5s ease;
 }
+
 .ref-active{
 display: block;
 }
+
 .carousel-slide.active {
   display: block;
 }
-
-
 
 button {
   position: absolute;
@@ -38,9 +35,14 @@ button {
   right: 10px;
 }
 
-
-
 h3 {
   margin: 0;
+}
+
+.reference-navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 

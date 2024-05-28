@@ -1,6 +1,5 @@
 import { ReferenceService } from './../../reference.service';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component, OnInit} from '@angular/core';
 import { contact } from 'src/app/interfaces';
 
 @Component({
